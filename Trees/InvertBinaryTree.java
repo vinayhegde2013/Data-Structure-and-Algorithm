@@ -40,19 +40,19 @@ public class InvertBinaryTree {
 	}
 
 	public class TreeNode {
-		int val;
+		int value;
 		TreeNode left;
 		TreeNode right;
 
 		TreeNode() {
 		}
 
-		TreeNode(int val) {
-			this.val = val;
+		TreeNode(int value) {
+			this.value = value;
 		}
 
-		TreeNode(int val, TreeNode left, TreeNode right) {
-			this.val = val;
+		TreeNode(int value, TreeNode left, TreeNode right) {
+			this.value = value;
 			this.left = left;
 			this.right = right;
 		}
