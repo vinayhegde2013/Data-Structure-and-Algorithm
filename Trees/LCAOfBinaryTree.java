@@ -12,7 +12,7 @@ public class LCAOfBinaryTree {
 		node.right = new TreeNode(1);
 		node.right.left = new TreeNode(0);
 		node.right.right = new TreeNode(8);
-		System.out.println(lowestCommonAncestor(node, new TreeNode(5), new TreeNode(1)));
+		System.out.println("LCA is :" + lowestCommonAncestor(node, node.left, node.right).val);
 	}
 
 	public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
