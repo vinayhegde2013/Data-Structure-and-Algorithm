@@ -16,7 +16,7 @@ public class DijkstrasAlgorithm {
 		Node node3 = new Node("C");
 		Node node4 = new Node("D");
 		Node node5 = new Node("E");
-		Node node6 = new Node("F");
+		Node node6 = new Node("G");
 
 		node1.addDestination(node2, 10);
 		node1.addDestination(node3, 15);
