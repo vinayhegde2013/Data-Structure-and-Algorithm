@@ -5,7 +5,6 @@ import com.vinay.hegde.algorithm.LCAOfBinaryTree.TreeNode;
 public class TreeComparision {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TreeNode node = new TreeNode(3);
 		node.left = new TreeNode(5);
 		node.left.left = new TreeNode(6);
