@@ -34,6 +34,6 @@ public class TreeComparision {
 			return false;
 		if (firstNode.val != secondNode.val)
 			return false;
-		return compare(firstNode.right, secondNode.right) && compare(secondNode.left, secondNode.left);
+		return compare(firstNode.right, secondNode.right) && compare(firstNode.left, secondNode.left);
 	}
 }
