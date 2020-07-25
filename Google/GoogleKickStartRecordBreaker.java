@@ -2,7 +2,7 @@ package com.vinay.hegde.algorithm;
 
 import java.util.Scanner;
 
-public class GoogleKickStart2020RecordBreaker {
+public class GoogleKickStartRecordBreaker {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
