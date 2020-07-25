@@ -1,5 +1,7 @@
 package com.comp.prog;
 
+//Constraints: 0 <= low <= high <= 10^9
+
 public class CountOddNumbers {
 
 	public static void main(String[] args) {
