@@ -1,8 +1,6 @@
 package com.vinay.hegde.algorithm;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import java.util.*;
 public class TreeFromInOrderAndPostOrder {
 
 	static int p;
