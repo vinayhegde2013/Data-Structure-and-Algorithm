@@ -29,8 +29,8 @@ public class TreeFromInOrderAndPostOrder {
 			Map<Integer, Integer> inorderValeToIdxMap) {
 		if (start > end)
 			return null;
-		int curr = postOrder[end];
-		end--;
+		int curr = postOrder[p];
+		p--;
 		TreeNode treeNode = new TreeNode(curr);
 		int index = inorderValeToIdxMap.get(curr).intValue();
 		if (end == start)
