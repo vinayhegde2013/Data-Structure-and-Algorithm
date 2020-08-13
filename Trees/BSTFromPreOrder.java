@@ -1,5 +1,10 @@
 package com.comp.prog;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class BSTFromPreOrder {
 
 	static int index = 0;
@@ -7,7 +12,26 @@ public class BSTFromPreOrder {
 	public static void main(String[] args) {
 
 		TreeNode treeNode = constructBSTUtil(new int[] { 8, 5, 1, 7, 10, 12 });
-		printTree(treeNode);
+		printInOrder(treeNode);
+		System.out.println(printLevelOrder(treeNode));
+	}
+
+	private static List<Integer> printLevelOrder(TreeNode treeNode) {
+
+		Queue<TreeNode> q = new LinkedList<>();
+		List<Integer> res = new ArrayList<>();
+		q.offer(treeNode);
+		while (!q.isEmpty()) {
+			TreeNode currNode = q.poll();
+			if (currNode != null) {
+				res.add(currNode.val);
+				if (currNode.left != null)
+					q.offer(currNode.left);
+				if (currNode.right != null)
+					q.offer(currNode.right);
+			}
+		}
+		return res;
 	}
 
 	private static TreeNode constructBSTUtil(int[] preOrder) {
@@ -29,15 +53,14 @@ public class BSTFromPreOrder {
 		return root;
 	}
 
-	 //In order traversal
-	private static void printTree(TreeNode treeNode) {
-       
+	private static void printInOrder(TreeNode treeNode) {
+
 		if (treeNode == null)
 			return;
 
-		printTree(treeNode.left);
+		printInOrder(treeNode.left);
 		System.out.println(treeNode.val);
-		printTree(treeNode.right);
+		printInOrder(treeNode.right);
 	}
 
 	static class TreeNode {
