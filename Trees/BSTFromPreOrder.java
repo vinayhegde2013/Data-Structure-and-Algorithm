@@ -29,8 +29,9 @@ public class BSTFromPreOrder {
 		return root;
 	}
 
+	 //In order traversal
 	private static void printTree(TreeNode treeNode) {
-
+       
 		if (treeNode == null)
 			return;
 
