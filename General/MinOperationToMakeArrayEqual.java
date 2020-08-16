@@ -7,6 +7,7 @@ public class MinOperationToMakeArrayEqual {
 	// Can be increment / decrement by 1 only at a time
 	public static void main(String[] args) {
 		System.out.println(minimumOperation(new int[] { 1, 3, 5 }));
+		System.out.println(minimumOperation(new int[] { 1, 10, 5, 3, 15, 2 }));
 	}
 
 	private static int minimumOperation(int[] arr) {
