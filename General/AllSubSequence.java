@@ -20,7 +20,11 @@ public class AllSubSequence {
 			result.add(ans);
 			return;
 		}
+		
+		//Adding a first character
 		printAllSubSequence(str.substring(1), ans + str.charAt(0));
+		
+		//Not adding a first character
 		printAllSubSequence(str.substring(1), ans);
 	}
 
