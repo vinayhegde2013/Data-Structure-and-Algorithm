@@ -38,6 +38,18 @@ public class LCAOfBinaryTree {
 		return left != null ? left : right;
 	}
 
+// 	private TreeNode helper(TreeNode node, TreeNode q, TreeNode p) {
+//         if (node == null || node == q || node == p) {
+//             return node;
+//         } else {
+//             TreeNode left = helper(node.left, p, q);
+//             TreeNode right = helper(node.right, p, q);
+//             if (left != null && right != null) {
+//                 return node;
+//             }
+//             return left != null ? left : right;
+//         }
+		
 	public static class TreeNode {
 		int val;
 		TreeNode left;
