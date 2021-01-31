@@ -49,7 +49,7 @@ public class LCAOfBinaryTree {
 //             }
 //             return left != null ? left : right;
 //         }
-		
+		 
 	public static class TreeNode {
 		int val;
 		TreeNode left;
