@@ -43,10 +43,16 @@ public class LCAOfBinaryTree {
 //             return node;
 //         } else {
 //             TreeNode left = helper(node.left, p, q);
-//             TreeNode right = helper(node.right, p, q);
+//             TreeNode right = helper(node.right, p, q)
+	
+//       If both of the above calls return Non-NULL, then one key
+//       is present in once subtree and other is present in other,
+//       So this node is the LCA
+	
 //             if (left != null && right != null) {
 //                 return node;
 //             }
+//        Otherwise check if left subtree or right subtree is LCA
 //             return left != null ? left : right;
 //         }
 		 
