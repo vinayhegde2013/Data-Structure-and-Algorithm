@@ -16,6 +16,7 @@ public class Reversort {
 			int[] temp = new int[min - i + 1];
 			for (int j = i; j <= min; j++)
 				temp[j - i] = arr[j];
+			// Reverse i .....min index
 			for (int j = i; j <= min; j++)
 				arr[j] = temp[temp.length - 1 - (j - i)];
 			answer += temp.length;
