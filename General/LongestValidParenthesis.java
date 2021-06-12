@@ -2,7 +2,7 @@ package com.comp.prog;
 
 import java.util.Stack;
 
-public class MergeSortedList {
+public class LongestValidParenthesis {
 
       public static void main(String[] args) {
  
