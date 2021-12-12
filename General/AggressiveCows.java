@@ -3,6 +3,9 @@ package com.vinay.hegde.programming;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+* Problem Statement : https://www.spoj.com/problems/AGGRCOW/
+*/
 public class AggressiveCows {
 
 	public static void main(String[] args) {
