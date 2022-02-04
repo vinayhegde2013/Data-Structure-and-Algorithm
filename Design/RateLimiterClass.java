@@ -4,10 +4,7 @@ import java.util.Date;
 /*
     Question :
     Create a rate limiter which ensures that no more than n requests are allowed per second.
-    
-    Leetcode question link :
-    https://leetcode.com/discuss/interview-question/124558/Uber-or-Rate-Limiter
-    
+  
     Approach :
     Maintain a counter which represents the number of requests that can be allowed so as to not exceed the limit. This counter should be incremented every (1 / n)th second till a max value of n. When processing a request, if the counter's value is greater than zero, it is decremented and the request is allowed to pass through. If the counter's value is zero, then the request is rejected.
     
